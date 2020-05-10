@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_in_shop_front_image_adapter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_photo"/>
+    <TextView
+        android:id="@+id/item_in_shop_front_name_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/item_in_shop_front_image_adapter"/>
+    <TextView
+        android:id="@+id/item_in_shop_front_description_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toEndOf="@id/item_in_shop_front_image_adapter"
+        android:layout_below="@id/item_in_shop_front_name_adapter"/>
+
+    <Button
+        android:id="@+id/item_in_shop_front_delete_btn_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_in_shop_front_image_adapter"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="delete" />
+</RelativeLayout>

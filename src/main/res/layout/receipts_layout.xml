@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/receipts"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/name_in_receipt"
+
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/name_in_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/total_in_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/receipts"
+
+        android:textSize="30dp" />
+</RelativeLayout>

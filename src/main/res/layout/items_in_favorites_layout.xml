@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/image_in_fav"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Property Image"
+        android:src="@drawable/ic_photo"/>
+
+    <LinearLayout
+        android:id="@+id/infoSection_in_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_in_fav"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name_in_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="item name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/description_in_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Description"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/price_in_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Price" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pricingSection_in_fav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/image_in_fav"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+
+
+        <ImageButton
+            android:id="@+id/cartbutton_in_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_shopping_cart"
+            android:focusable="false"/>
+        <ImageButton
+            android:id="@+id/favbutton_in_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toEndOf="@id/cartbutton_in_fav"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_star"
+            android:focusable="false"/>
+
+
+        <EditText
+            android:id="@+id/numberoforders_in_fav"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_toEndOf="@id/favbutton_in_fav"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginLeft="110dp"
+            android:text="1" />
+        <ImageButton
+            android:id="@+id/increasebutton_in_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_increase"
+            android:layout_toEndOf="@id/numberoforders_in_fav"
+            android:focusable="false"/>
+        <ImageButton
+            android:id="@+id/decreasebuttton_in_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/numberoforders_in_fav"
+            android:layout_below="@id/increasebutton_in_fav"
+            android:src="@drawable/ic_decrease"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

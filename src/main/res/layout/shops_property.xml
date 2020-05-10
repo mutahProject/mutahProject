@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/store_name"
+        android:textAlignment="center"
+        android:textSize="37dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:id="@+id/store_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/store_name"
+        android:src="@drawable/ic_photo"/>
+    <TextView
+        android:id="@+id/shop_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/store_logo"
+        android:layout_below="@id/store_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <TextView
+        android:id="@+id/view_more"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/store_logo"
+        android:layout_margin="10dp"
+        android:text="View more"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

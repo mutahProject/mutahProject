@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.marsev.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.marsev.ui.ExploreShops.ExploreShops"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_explore_shops"/>
+
+    <fragment
+        android:id="@+id/nav_shopping_cart"
+        android:name="com.example.marsev.ui.ShoppingCart.ShoppingCartFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_shopping_cart" >
+        <action
+            android:id="@+id/action_nav_shopping_cart_self"
+            app:destination="@id/nav_shopping_cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.marsev.ui.favorite.FavoritesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_nav_favorites_self"
+            app:destination="@id/nav_favorites" />
+    </fragment>
+</navigation>

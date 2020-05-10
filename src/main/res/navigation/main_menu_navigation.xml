@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_navigation"
+    app:startDestination="@id/nav_explore">
+    <fragment
+        android:id="@+id/nav_explore"
+        android:name="com.example.marsev.ui.explore.ExploreFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_explorer"/>
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.marsev.ui.search.SearchFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_explorer">
+        <action
+            android:id="@+id/action_nav_search_self"
+            app:destination="@id/nav_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.marsev.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_explorer">
+        <action
+            android:id="@+id/action_nav_notifications_self"
+            app:destination="@id/nav_notifications" />
+    </fragment>
+
+</navigation>
